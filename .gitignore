@@ -1,0 +1,77 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Data and outputs
+# Ignore local/raw dataset copies and generated train/val files
+data/
+!data/README*
+src/dataset
+
+checkpoints/
+logs/
+wandb/
+mlruns/
+
+# YOLO / model artifacts
+*.pth
+*.engine
+*.bin
+*.tflite
+*.weights
+*.cache
+*.npy
+
+# Prediction and export outputs
+runs/detect/train/prediction
+runs/detect/val
+runs/detect/train/args.yaml
+outputs/
+results/
+exports/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment and secret files
+.env
+.env.*
+*.env
+
+# Pip package metadata
+pip-wheel-metadata/
+
+# Test / coverage artifacts
+.pytest_cache/
+coverage.xml
+
+# Temporary files
+*.log
+*.bak
+*.orig

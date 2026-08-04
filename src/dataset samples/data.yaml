@@ -1,0 +1,20 @@
+path: C:/Users/HP/OneDrive/Desktop/object-detection-yolo/src/dataset/
+
+# Relative to path above
+train: images/train
+val:   images/val
+test:  images/test
+ 
+# Number of classes
+nc: 8
+ 
+# Class names and their corresponding indices
+names:
+  0: car
+  1: van
+  2: truck
+  3: pedestrian
+  4: Person_sitting
+  5: cyclist
+  6: tram
+  7: misc
