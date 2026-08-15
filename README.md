@@ -247,8 +247,8 @@ height = (ymax - ymin) / image_height
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ADAS-YOLO-KITTI.git
-cd ADAS-YOLO-KITTI
+git clone https://github.com/MDkamrulJaman/ADAS_Object_Detection_using_YOLO_on_KITTI_Benchmark_Dataset.git
+cd ADAS_Object_Detection_using_YOLO_on_KITTI_Benchmark_Dataset
 ```
 
 ### 2. Create Virtual Environment
