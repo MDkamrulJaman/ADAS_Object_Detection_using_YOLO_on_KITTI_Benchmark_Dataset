@@ -87,27 +87,34 @@ Real-Time Detection
 ## 🛠️ Tech Stack
 
 **Programming Language**
+
 - Python 3.10
 
 **Deep Learning Framework**
+
 - PyTorch
 
 **Object Detection Framework**
+
 - Ultralytics YOLO
 
 **Computer Vision**
+
 - OpenCV
 - NumPy
 
 **Data Processing**
+
 - Pandas
 - YAML
 - tqdm
 
 **Visualization**
+
 - Matplotlib
 
 **Hardware (Training Environment)**
+
 ```
 GPU: NVIDIA A100 SXM 80GB
 CUDA Enabled Training
@@ -118,9 +125,11 @@ CUDA Enabled Training
 ## ⭐ Key Features
 
 ### 🚘 Real-Time Object Detection
+
 Detects road objects from camera images using YOLO inference.
 
 ### 🔄 KITTI → YOLO Conversion Pipeline
+
 Automatically converts KITTI annotations:
 
 ```
@@ -134,7 +143,9 @@ class_id, x_center, y_center, width, height
 ```
 
 ### 📊 Performance Evaluation
+
 Includes:
+
 - mAP@0.5
 - mAP@0.5:0.95
 - Precision
@@ -142,7 +153,9 @@ Includes:
 - Training loss analysis
 
 ### ⚡ Optimized Training Pipeline
+
 Supports:
+
 - GPU acceleration
 - Batch training
 - Custom YAML configuration
@@ -200,11 +213,13 @@ ADAS-YOLO-KITTI/
 ### KITTI Vision Benchmark Dataset
 
 Dataset contains:
+
 - Stereo camera images
 - LiDAR data
 - Object annotations
 
 Used subset:
+
 ```
 KITTI Object Detection Dataset
 ```
@@ -212,7 +227,7 @@ KITTI Object Detection Dataset
 Classes:
 
 | Class      | Description    |
-|------------|-----------------|
+| ---------- | -------------- |
 | Car        | Vehicles       |
 | Pedestrian | Human objects  |
 | Cyclist    | Bicycle riders |
@@ -224,7 +239,7 @@ Classes:
 ### Annotation Mapping
 
 | KITTI | YOLO     |
-|-------|----------|
+| ----- | -------- |
 | Class | class_id |
 | xmin  | x_center |
 | ymin  | y_center |
@@ -254,13 +269,16 @@ cd ADAS_Object_Detection_using_YOLO_on_KITTI_Benchmark_Dataset
 ### 2. Create Virtual Environment
 
 **Linux / Mac:**
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 **Windows:**
+
 ```bash
+python -m pip install --upgrade pip
 python -m venv venv
 venv\Scripts\activate
 ```
@@ -350,7 +368,7 @@ python tests/test_inference.py
 ### Training Configuration
 
 | Parameter     | Value       |
-|---------------|-------------|
+| ------------- | ----------- |
 | Model         | YOLO        |
 | Epochs        | 100         |
 | Learning Rate | 0.000017    |
@@ -361,8 +379,8 @@ python tests/test_inference.py
 
 ## 📊 Final Results
 
-| Metric       | Score      |
-|--------------|------------|
+| Metric       | Score            |
+| ------------ | ---------------- |
 | mAP@0.5      | **0.8667** |
 | mAP@0.5:0.95 | **0.6358** |
 | Precision    | **0.9111** |
@@ -373,7 +391,7 @@ python tests/test_inference.py
 ## 📉 Loss Analysis
 
 | Loss                | Training | Validation |
-|----------------------|----------|------------|
+| ------------------- | -------- | ---------- |
 | Box Loss            | 0.87872  | 0.90454    |
 | Classification Loss | 0.49086  | 0.50919    |
 | DFL Loss            | 0.00235  | 0.00482    |
@@ -385,12 +403,15 @@ python tests/test_inference.py
 ### Strengths
 
 ✅ High precision (91%)
+
 - Low false positive detection rate
 
 ✅ Strong mAP@0.5
+
 - Reliable object localization
 
 ✅ Stable training
+
 - Training and validation losses are close
 
 ### Weaknesses
@@ -418,17 +439,20 @@ python tests/test_inference.py
 ## 🚀 Future Improvements
 
 ### Model Improvements
+
 - YOLOv9 / YOLOv10 comparison
 - Transformer-based detectors
 - Instance segmentation
 
 ### Autonomous Driving Extensions
+
 - LiDAR + Camera fusion
 - Sensor calibration
 - Object tracking using ByteTrack
 - Lane detection integration
 
 ### Deployment
+
 - TensorRT optimization
 - NVIDIA Jetson deployment
 - Real-time vehicle integration
@@ -470,6 +494,7 @@ Autonomous Vehicle Engineering | AI Engineer | Computer Vision
 Technische Hochschule Ingolstadt
 
 Areas:
+
 - Deep Learning
 - Object Detection
 - ADAS
@@ -487,6 +512,7 @@ MIT License
 ## ⭐ Acknowledgements
 
 Special thanks to:
+
 - KITTI Vision Benchmark
 - Ultralytics YOLO Team
 - PyTorch Community
