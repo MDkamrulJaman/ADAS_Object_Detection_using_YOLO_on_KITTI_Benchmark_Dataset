@@ -13,6 +13,8 @@ The system detects important road participants:
 - 🚲 Cyclists
 - 🚚 Vehicles
 
+  ## 📌Live Project: https://multi-class-object-detection-model-for.onrender.com
+
 The objective is to develop a **real-time computer vision perception module** suitable for autonomous driving applications.
 
 The complete pipeline includes:
