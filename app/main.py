@@ -263,5 +263,5 @@ app = FastAPI(title="YOLO26 Wrapper", version="1.0.0")
 def health():
     return {"status": "healthy", "service": "gradio-wrapper"}
 
-app = mount_gradio_app(app, demo, path="/")
+app = mount_gradio_app(app, demo, path="/", footer_links=["api"])
 
