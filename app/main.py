@@ -238,6 +238,14 @@ def predict_image(
 # Gradio Interface
 # ============================================================
 
+example_dir = Path(__file__).resolve().parent
+example_images = [
+    str(path)
+    for path in sorted(example_dir.glob("*"))
+    if path.suffix.lower() in {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
+]
+examples = [[image, 0.5, 0.7] for image in example_images]
+
 demo = gr.Interface(
     fn=predict_image,
     inputs=[
@@ -246,7 +254,8 @@ demo = gr.Interface(
         gr.Slider(minimum=0, maximum=1, value=0.70, label="IoU threshold"),
     ],
     outputs=gr.Image(type="pil", label="Result"),
-    title="Multi-Class Object Detection Model for Self-Driving Vehicle Safety",
+    examples=examples,
+    title="Multi-Class Object Detection Model",
     description="Upload images for inference via Ultralytics API.",
     api_name="predict",
 
