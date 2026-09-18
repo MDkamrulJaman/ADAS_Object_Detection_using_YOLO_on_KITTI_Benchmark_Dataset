@@ -238,7 +238,7 @@ def predict_image(
 # Gradio Interface
 # ============================================================
 
-example_dir = Path(__file__).resolve().parent
+example_dir = Path(__file__).resolve().parent / "assets"
 example_images = [
     str(path)
     for path in sorted(example_dir.glob("*"))

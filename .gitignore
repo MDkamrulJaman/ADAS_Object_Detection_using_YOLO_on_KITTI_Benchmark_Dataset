@@ -60,6 +60,7 @@ Thumbs.db
 Desktop.ini
 
 # Environment and secret files
+yolo26n.pt
 .env
 .env.*
 *.env
